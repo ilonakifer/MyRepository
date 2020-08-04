@@ -9,5 +9,5 @@ predict_tenure.py data-file-name model-type num-classes
   
 data-file-name – name of raw data file (as downloaded from the Kaggle site).
 model-type – regression or classification.
-num-classes – number of classes to perform multi-classification on. Ignored for regression.
+num-classes – number of classes to perform multi-classification on (Ignored for regression).
 
