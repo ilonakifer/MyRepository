@@ -5,7 +5,7 @@ The project is based on the data found at https://www.kaggle.com/blastchar/telco
 
 Run the program with the command:
 
-predict_tenure.py data-file-name model-type num-classes
+predict_tenure.py   data-file-name   model-type   num-classes
   
 data-file-name – name of raw data file (as downloaded from the Kaggle site).
 model-type – regression or classification.
