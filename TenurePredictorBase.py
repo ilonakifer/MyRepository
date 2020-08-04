@@ -32,22 +32,20 @@ class TenurePredictorBase:
     def feature_importances_(self):
         """Docstring:
         Returns feature importances
-        If regression then a single list of feature importances
-        If classification then a list of feature importances per class
         """
         return self.feature_importances_
 
 
     def score(self, X, true):
         """Docstring:
-        Performs evaluation of actual labels vs. prediction.
-        Behaviour depends on type of model -
-        1. For regression, evaluation is on actual tenure value using MAE
-        2. For classification, true labels are transformed to class number, and evaluation is via f1 score
+        Performs prediction and then scores the actual labels vs. prediction.
+        Predictor accuracy is measure via MAE (Mean Absolute Error).
+        This metric provides good interpretability of results, as well as
+        equal weighting of errors.
 
         Parameters:
         -----------
-        true : array of actual labels
+        X : array of actual labels
         pred : array of predicted labels
         Returns: prediction KPI value"""
 
